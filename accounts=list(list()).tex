@@ -1,0 +1,11 @@
+accounts=list(list())
+sums=0
+real=0
+for i in range (0,len(accounts)-1):
+     for a in range (0,len(accounts[0])-1):
+        sums=accounts[i][a]+sums    
+    if sums>=real:
+         real=sums
+    sums=0
+print(real)
+            
